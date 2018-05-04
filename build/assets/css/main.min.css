@@ -326,6 +326,47 @@ hr {
   margin: 10px 0 30px;
   height: 0; }
 
+#features {
+  background: #f9f9f9;
+  text-align: center;
+  position: relative;
+  height: 500px; }
+  #features:after {
+    bottom: 0;
+    position: absolute;
+    background: inherit;
+    content: " ";
+    height: 100%;
+    left: 0;
+    right: 0;
+    transform: skewY(-10deg);
+    transform-origin: 100%;
+    z-index: -1; }
+  #features h2 {
+    margin: 80px 0; }
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-gap: 30px;
+  padding-bottom: 120px; }
+
+.feature-card {
+  background: white;
+  padding: 30px 40px 10px 40px;
+  box-shadow: 0 12px 10px -10px rgba(0, 0, 0, 0.2); }
+  .feature-card h3 {
+    margin: 10px 0 0; }
+
+.car {
+  border-top: 3px solid #028973; }
+
+.shoe {
+  border-top: 3px solid #D01431; }
+
+.device {
+  border-top: 3px solid #38ACDA; }
+
 .flex-video {
   height: 0;
   margin-bottom: 0.88889rem;
@@ -346,29 +387,28 @@ hr {
 #header {
   background: url("../img/herobackground.jpg") no-repeat;
   background-size: cover;
-  height: 90vh;
+  height: 80vh;
   color: white;
   text-align: center;
-  overflow: auto; }
+  overflow: hidden; }
   #header img {
     max-width: 500px;
     width: 100%; }
-
-article {
-  width: 60%;
-  margin: 0 auto; }
-
-h1 {
-  margin-bottom: 10px;
-  color: white; }
-
-a.logo {
-  margin-top: -5px; }
+  #header article {
+    width: 60%;
+    margin: 0 auto;
+    margin-top: -130px; }
+  #header h1 {
+    margin-bottom: 10px;
+    color: white;
+    text-transform: uppercase; }
+  #header a.logo {
+    margin-left: 20px;
+    margin-top: -10px; }
 
 .main-nav {
   display: flex;
   margin-top: 20px;
-  margin-bottom: -120px;
   padding: 0; }
   .main-nav li {
     list-style: none; }
@@ -391,3 +431,15 @@ a.download {
   color: #D01431;
   box-shadow: 0 12px 10px -10px rgba(0, 0, 0, 0.2);
   margin-left: 25px; }
+
+#brands ul {
+  margin: 0;
+  padding: 20px 0;
+  background: white;
+  display: grid;
+  grid-template-columns: repeat(6, auto); }
+  @media only screen and (max-width: 550px) {
+    #brands ul {
+      grid-template-columns: repeat(3, auto); } }
+  #brands ul li {
+    list-style: none; }

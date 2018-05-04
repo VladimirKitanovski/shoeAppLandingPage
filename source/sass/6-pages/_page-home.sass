@@ -1,32 +1,33 @@
 #header 
     background: url("../img/herobackground.jpg") no-repeat
     background-size: cover
-    height: 90vh
+    height: 80vh
     color: white
     text-align: center
-    overflow: auto
+    overflow: hidden
+
 
     img 
         max-width: 500px
         width: 100%
 
+    article
+        width: 60%
+        margin: 0 auto
+        margin-top: -130px
 
-article
-    width: 60%
-    margin: 0 auto
+    h1 
+        margin-bottom: 10px
+        color: white
+        text-transform: uppercase
 
-
-h1 
-    margin-bottom: 10px
-    color: white
-
-a.logo 
-    margin-top: -5px
+    a.logo
+        margin-left: 20px
+        margin-top: -10px
 
 .main-nav
     display: flex
     margin-top: 20px
-    margin-bottom: -120px
     padding: 0
     
     li
@@ -49,8 +50,21 @@ a.logo
 
 a.download
     background: white
-    color: $firered
+    color: $redd
     box-shadow: 0 12px 10px -10px rgba(0,0,0, 0.2)
     margin-left: 25px
+
+#brands ul
+    margin: 0
+    padding: 20px 0
+    background: white
+    display: grid
+    grid-template-columns: repeat(6, auto)
+    @media only screen and (max-width: 550px)
+        grid-template-columns: repeat(3, auto)
+
+    li
+        list-style: none    
+
 
 
