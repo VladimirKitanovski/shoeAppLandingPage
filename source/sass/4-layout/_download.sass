@@ -24,17 +24,20 @@
         width: 200px
         margin: 0 15px
 
-    .apple:before
+        &:hover
+            color: $redd
+
+    .apple:before, .google:before
         position: absolute
         display: block
-        left: 30px
-        top: 6px
+        
+    .apple:before
+        left: 28px
+        top: 7.5px
         font-size: 26px
-        content: ""
+        content: url("../img/apple.png")
 
     .google:before
-        position: absolute
-        display: block
         left: 25px
         top: 14px
         content: url("../img/google.png")
