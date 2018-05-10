@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize * */
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,500,900");
 html {
@@ -429,29 +430,56 @@ a.download {
 
 #discount {
   margin-top: 65px; }
-
-.discountLayout {
-  display: flex;
-  align-items: center;
-  justify-content: center; }
-
-.offer {
-  width: 40%;
-  margin: 0 auto; }
-
-.offer .button {
-  background: #D01431;
-  color: white;
-  padding: 20px 80px;
-  font-size: 18px; }
-
-h2 {
-  margin-bottom: 15px; }
+  #discount .discountLayout {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  #discount .offer {
+    width: 40%;
+    margin: 0 auto; }
+  #discount .offer .button {
+    background: #D01431;
+    color: white;
+    padding: 20px 80px;
+    font-size: 18px; }
+  #discount h2 {
+    margin-bottom: 15px; }
 
 #download {
-  background: #028973;
+  color: white;
+  text-align: center;
+  background: url("../img/runner.jpg") no-repeat;
+  background-size: cover;
   padding: 100px 0;
   margin-top: -70px; }
+  #download h2 {
+    color: white;
+    font-size: 68px;
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: 900; }
+  #download p {
+    width: 100%;
+    max-width: 450px;
+    margin: 20px auto;
+    font-weight: 900; }
+  #download .button {
+    position: relative;
+    width: 200px;
+    margin: 0 15px; }
+  #download .apple:before {
+    position: absolute;
+    display: block;
+    left: 30px;
+    top: 6px;
+    font-size: 26px;
+    content: ""; }
+  #download .google:before {
+    position: absolute;
+    display: block;
+    left: 25px;
+    top: 14px;
+    content: url("../img/google.png"); }
 
 .flex-video {
   height: 0;
