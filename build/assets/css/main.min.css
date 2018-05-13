@@ -361,7 +361,10 @@ hr {
     padding: 10px 40px;
     text-decoration: none;
     font-weight: 900;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    transition: all 0.3s ease; }
+    .main-nav a:hover, .main-nav a:active {
+      color: #D01431; }
   .main-nav li:first-child {
     margin-right: auto;
     padding: 10px 0; }
@@ -495,6 +498,22 @@ a.download {
     left: 25px;
     top: 14px;
     content: url("../img/google.png"); }
+
+#footer {
+  text-align: center;
+  padding: 25px 0; }
+  #footer a {
+    transition: all 0.3s ease; }
+    #footer a:hover, #footer a:active {
+      color: #D01431; }
+  #footer li {
+    list-style: none; }
+    #footer li a {
+      padding: 0 20px;
+      text-transform: uppercase;
+      transition: all 0.3s ease; }
+      #footer li a:hover, #footer li a:active {
+        color: #D01431; }
 
 .flex-video {
   height: 0;
