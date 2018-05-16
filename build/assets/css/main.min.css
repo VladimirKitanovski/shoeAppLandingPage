@@ -198,7 +198,7 @@ body {
   -webkit-text-size-adjust: 100%; }
 
 .wrapper {
-  width: 100%;
+  width: 90%;
   max-width: 1100px;
   margin: 0 auto; }
 
@@ -333,6 +333,9 @@ hr {
   color: white;
   text-align: center;
   overflow: hidden; }
+  @media only screen and (max-width: 680px) {
+    #header {
+      height: 500px; } }
   #header img {
     max-width: 500px;
     width: 100%; }
@@ -340,10 +343,21 @@ hr {
     width: 60%;
     margin: 0 auto;
     margin-top: -130px; }
+    @media only screen and (max-width: 680px) {
+      #header article {
+        width: 100%; } }
   #header h1 {
     margin-bottom: 10px;
     color: white;
     text-transform: uppercase; }
+    @media only screen and (max-width: 680px) {
+      #header h1 {
+        margin-top: 60px; } }
+  #header p {
+    font-weight: 900; }
+    @media only screen and (max-width: 680px) {
+      #header p {
+        margin-bottom: 10px; } }
   #header a.logo {
     margin-left: 20px;
     margin-top: -10px; }
@@ -390,6 +404,9 @@ a.download {
   text-align: center;
   position: relative;
   height: 500px; }
+  @media only screen and (max-width: 900px) {
+    #features {
+      height: auto; } }
   #features:after {
     bottom: 0;
     position: absolute;
@@ -409,6 +426,9 @@ a.download {
   grid-template-columns: repeat(3, auto);
   grid-gap: 30px;
   padding-bottom: 120px; }
+  @media only screen and (max-width: 680px) {
+    .cards {
+      grid-template-columns: repeat(1, auto); } }
 
 .feature-card {
   background: white;
@@ -427,7 +447,7 @@ a.download {
   border-top: 3px solid #D01431; }
 
 #brands ul {
-  margin: 0;
+  margin: 0 auto;
   padding: 20px 0;
   background: white;
   display: grid;
@@ -436,7 +456,13 @@ a.download {
     #brands ul {
       grid-template-columns: repeat(3, auto); } }
   #brands ul li {
-    list-style: none; }
+    list-style: none;
+    text-align: center; }
+  #brands ul .adidas {
+    max-width: 50px; }
+  #brands ul li img {
+    width: 100%;
+    max-width: 80px; }
 
 #discount {
   margin-top: 65px; }
@@ -444,9 +470,23 @@ a.download {
     display: flex;
     align-items: center;
     justify-content: center; }
+    @media only screen and (max-width: 680px) {
+      #discount .discountLayout {
+        display: block; } }
+    @media only screen and (max-width: 680px) {
+      #discount .discountLayout img {
+        width: 100%;
+        max-width: 400px;
+        text-align: center;
+        margin: 0 auto;
+        display: block; } }
   #discount .offer {
     width: 40%;
     margin: 0 auto; }
+    @media only screen and (max-width: 680px) {
+      #discount .offer {
+        width: 100%;
+        text-align: center; } }
   #discount .offer .button {
     background: #D01431;
     color: white;
@@ -469,12 +509,20 @@ a.download {
   background-size: cover;
   padding: 100px 0;
   margin-top: -70px; }
+  @media only screen and (max-width: 680px) {
+    #download {
+      background-position: center;
+      margin-top: 75px;
+      padding: 60px; } }
   #download h2 {
     color: white;
     font-size: 68px;
     margin: 0;
     text-transform: uppercase;
     font-weight: 900; }
+    @media only screen and (max-width: 680px) {
+      #download h2 {
+        font-size: 44px; } }
   #download p {
     width: 100%;
     max-width: 450px;
@@ -484,6 +532,9 @@ a.download {
     position: relative;
     width: 200px;
     margin: 0 15px; }
+    @media only screen and (max-width: 680px) {
+      #download .button {
+        margin: 10px 15px; } }
     #download .button:hover {
       color: #D01431; }
   #download .apple:before, #download .google:before {

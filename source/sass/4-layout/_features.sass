@@ -3,6 +3,9 @@
     text-align: center
     position: relative
     height: 500px
+    @media only screen and (max-width: 900px)
+        height: auto
+
     &:after
         bottom: 0
         position: absolute
@@ -23,6 +26,9 @@
     grid-template-columns: repeat(3, auto)
     grid-gap: 30px
     padding-bottom: 120px
+    @media only screen and (max-width: 680px)
+        grid-template-columns: repeat(1, auto)
+
 
 .feature-card
     background: white
