@@ -354,7 +354,8 @@ hr {
       #header h1 {
         margin-top: 60px; } }
   #header p {
-    font-weight: 900; }
+    font-weight: 900;
+    text-transform: uppercase; }
     @media only screen and (max-width: 680px) {
       #header p {
         margin-bottom: 10px; } }
@@ -367,7 +368,8 @@ hr {
   margin-top: 20px;
   padding: 0; }
   .main-nav li {
-    list-style: none; }
+    list-style: none;
+    display: inline-block; }
   .main-nav a {
     color: white;
     display: block;
@@ -398,6 +400,40 @@ a.download {
     transform: translateY(3px);
     background-color: #028973;
     cursor: pointer; }
+
+li.nav-toggle {
+  display: none; }
+  li.nav-toggle a {
+    padding-right: 0; }
+
+@media screen and (max-width: 750px) {
+  li.nav-toggle {
+    display: block;
+    z-index: 100; }
+  .responsive-nav {
+    display: none; }
+  .responsive-nav.unfold {
+    display: block;
+    width: 100%;
+    background: #1f1f1f;
+    position: absolute;
+    top: 0;
+    right: 0; }
+  .responsive-nav.unfold li {
+    display: block; }
+  .responsive-nav.unfold a {
+    padding: 40px;
+    display: block;
+    text-align: center; }
+  .responsive-nav.unfold a:hover {
+    transform: translate(0);
+    color: #D01431; }
+  .responsive-nav.unfold a.download {
+    background: inherit;
+    color: white;
+    margin-left: 0; }
+  .responsive-nav.unfold a.download:hover {
+    color: #D01431; } }
 
 #features {
   background: #f9f9f9;
